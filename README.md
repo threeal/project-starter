@@ -1,3 +1,6 @@
+<!-- Clear the content of this file and replace it with the description of your project. -->
+<!-- Learn more: https://www.makeareadme.com -->
+
 # Project Starter
 
 [![version](https://img.shields.io/github/v/release/threeal/project-starter?style=flat-square)](https://github.com/threeal/project-starter/releases)

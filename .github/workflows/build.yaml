@@ -15,4 +15,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.0.0
 
-      # Do something to build the project
+      # Add steps here to build and test your project.
+      # Learn more: https://docs.github.com/en/actions/automating-builds-and-tests
