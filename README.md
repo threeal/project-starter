@@ -8,3 +8,7 @@ The Project Starter is a [GitHub repository template](https://docs.github.com/en
 
 - Preconfigured [GitHub Actions](https://github.com/features/actions) to automate your project workflow.
 - Preconfigured [Dependabot](https://docs.github.com/en/code-security/dependabot) to keep your project dependencies up to date.
+
+## Usage
+
+Refer to [this wiki](https://github.com/threeal/project-starter/wiki) for information on how to use this template.
