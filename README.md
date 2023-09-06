@@ -1,5 +1,6 @@
 # Project Starter
 
+[![version](https://img.shields.io/github/v/release/threeal/project-starter?style=flat-square)](https://github.com/threeal/project-starter/releases)
 [![license](https://img.shields.io/github/license/threeal/project-starter?style=flat-square)](./LICENSE)
 [![build status](https://img.shields.io/github/actions/workflow/status/threeal/project-starter/build.yaml?branch=main&style=flat-square)](https://github.com/threeal/project-starter/actions/workflows/build.yaml)
 
