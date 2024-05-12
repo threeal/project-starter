@@ -14,7 +14,7 @@ jobs:
         os: [Windows, Ubuntu, macOS]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.4
+        uses: actions/checkout@v4.1.5
 
       # Add steps here to build and test your project.
       # Learn more: https://docs.github.com/en/actions/automating-builds-and-tests
