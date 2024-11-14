@@ -1,6 +1,3 @@
-<!-- Clear the content of this file and replace it with the description of your project. -->
-<!-- Learn more: https://www.makeareadme.com -->
-
 # Project Starter
 
 The Project Starter is a [GitHub repository template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) that provides a minimalistic boilerplate to kickstart any type of project on [GitHub](https://github.com/). Use this template to initialize your project with preconfigured settings recommended for various GitHub projects.
