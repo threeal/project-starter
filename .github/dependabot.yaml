@@ -6,6 +6,7 @@ updates:
       interval: daily
     commit-message:
       prefix: chore
+    labels: []
 
   # Add additional configuration here to automatically update other dependencies in your project.
   # Learn more: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
