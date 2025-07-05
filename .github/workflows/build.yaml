@@ -12,5 +12,8 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v4.2.2
 
+      - name: Check Formatting
+        uses: dprint/check@v2.3
+
       # Add the steps here to build and test your project.
       # Learn more: https://docs.github.com/en/actions/automating-builds-and-tests
