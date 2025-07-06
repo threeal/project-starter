@@ -1,5 +1,5 @@
+# Modify this Git ignore list according to your needs.
+# Learn more: https://git-scm.com/docs/gitignore
+
 .*
 !.git*
-
-# Add additional glob patterns here to specify more files or directories to be ignored by Git.
-# Learn more: https://git-scm.com/docs/gitignore
