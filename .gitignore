@@ -1,6 +1,3 @@
-# Modify this Git ignore list according to your needs.
-# Learn more: https://git-scm.com/docs/gitignore
-
 .*
 !.github/
 !.gitignore

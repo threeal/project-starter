@@ -1,5 +1,4 @@
-# Modify this Dependabot configuration according to your needs.
-# Learn more: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+# Adjust the schedule or add more package ecosystems as needed.
 
 version: 2
 updates:

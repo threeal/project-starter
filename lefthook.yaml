@@ -1,5 +1,4 @@
-# Modify this Lefthook configuration according to your needs.
-# Learn more: https://lefthook.dev/configuration/index.html
+# Add more jobs here or other Git hooks for additional checks.
 
 pre-commit:
   piped: true

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## About This Repository
 
-This is a language-agnostic GitHub repository template. It provides formatting enforcement and CI/CD infrastructure as a starting point for new projects. There is no build system, test suite, or application code — those are added by projects that use this template.
+This is a minimal, language-agnostic GitHub repository template. It includes formatting enforcement and a CI workflow as a baseline — there is no build system, test suite, or application code. Those are added by projects that use this template.
 
 ## Formatting
 

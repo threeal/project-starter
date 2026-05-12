@@ -1,5 +1,4 @@
-# Modify this GitHub Actions workflow according to your needs, you can also add another workflow file in the same directory.
-# Learn more: https://docs.github.com/en/actions/how-tos/use-cases-and-examples/building-and-testing
+# Add more jobs here or create additional workflow files in this directory.
 
 name: Check
 on:

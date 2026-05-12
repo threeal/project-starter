@@ -1,5 +1,4 @@
-// Modify this dprint configuration according to your needs.
-// Learn more: https://dprint.dev/config/
+// Add or remove plugins for the languages used in your project.
 
 {
   "plugins": [
