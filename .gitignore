@@ -2,4 +2,5 @@
 # Learn more: https://git-scm.com/docs/gitignore
 
 .*
-!.git*
+!.github/
+!.gitignore
