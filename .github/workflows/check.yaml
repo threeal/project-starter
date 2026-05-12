@@ -12,8 +12,8 @@ jobs:
     name: Check Formatting
     runs-on: ubuntu-24.04
     steps:
-      - name: Checkout Project
+      - name: Checkout project
         uses: actions/checkout@v6.0.2
 
-      - name: Check Formatting
+      - name: Check formatting
         uses: dprint/check@v2.3
