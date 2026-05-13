@@ -13,7 +13,7 @@ A minimal GitHub repository template with formatting enforcement and CI/CD ready
 
 1. [Create a new repository](https://github.com/new?template_name=project-starter&template_owner=threeal) from this template, or clone it directly.
 2. Install [Lefthook](https://lefthook.dev/install/) and run `lefthook install` to activate the pre-commit hook.
-3. Replace the [`LICENSE`](./LICENSE) file with your preferred license, or remove it to keep the project [unlicensed](https://unlicense.org/).
+3. Replace the [`LICENSE`](./LICENSE) file with your preferred license, or keep it to keep the project [unlicensed](https://unlicense.org/).
 4. Modify the template files to fit your project.
 
 ## Customizing
@@ -31,7 +31,7 @@ For a more opinionated starting point in a specific language or framework:
 
 - [Action Starter](https://github.com/threeal/action-starter)
 - [C++ Starter](https://github.com/threeal/cpp-starter)
-- [CMake Starter](https://github.com/threeal/cmake-starter/)
+- [CMake Starter](https://github.com/threeal/cmake-starter)
 - [Composite Action Starter](https://github.com/threeal/composite-action-starter)
 - [Discord Bot Starter](https://github.com/threeal/discord-bot-starter)
 - [Node.js Starter](https://github.com/threeal/nodejs-starter)
