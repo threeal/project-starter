@@ -30,4 +30,4 @@ Lefthook manages Git hooks (`lefthook.yaml`). The pre-commit hook runs `dprint f
 
 ## CI
 
-The only CI job (`.github/workflows/ci.yaml`) validates formatting with `dprint check` on PRs and pushes to `main`.
+The only CI job (`.github/workflows/ci.yaml`) validates the pre-commit hook with `lefthook run pre-commit --all-files` on PRs and pushes to `main`.
