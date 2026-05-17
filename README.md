@@ -7,7 +7,7 @@ A minimal GitHub repository template with formatting enforcement and CI/CD ready
 - **Formatting** with [dprint](https://dprint.dev/) — supports JSON, Markdown, and YAML out of the box
 - **Pre-commit hooks** with [Lefthook](https://lefthook.dev/) — auto-formats files before each commit
 - **Dependabot** — keeps GitHub Actions dependencies up to date automatically
-- **CI workflow** — validates formatting on every pull request and push to `main`
+- **CI workflow** — validates the pre-commit hook on every pull request and push to `main`
 
 ## Getting Started
 
