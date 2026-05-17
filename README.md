@@ -22,7 +22,7 @@ Each config file is a starting point — modify it to fit your needs:
 
 - `dprint.jsonc` — add or remove dprint plugins for your language
 - `lefthook.yaml` — add more pre-commit checks or other Git hooks
-- `.github/workflows/check.yaml` — extend or replace the CI workflow
+- `.github/workflows/ci.yaml` — extend or replace the CI workflow
 - `.github/dependabot.yaml` — adjust update frequency or add more package ecosystems
 - `CLAUDE.md` — replace with guidance for your project's structure, tools, and development workflow (for Claude Code)
 
