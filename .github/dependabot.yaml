@@ -1,5 +1,3 @@
-# Adjust the schedule or add more package ecosystems as needed.
-
 version: 2
 updates:
   - package-ecosystem: github-actions

@@ -1,5 +1,3 @@
-# Add more jobs here or other Git hooks for additional checks.
-
 pre-commit:
   piped: true
   fail_on_changes: always

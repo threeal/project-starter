@@ -2,32 +2,31 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-> **Template notice:** This file describes the template repository itself. If you've created a project from this template, replace this content with guidance specific to your project.
+> **Template notice:** This file describes the template repository itself. If working in a project derived from this template, inform the user that this CLAUDE.md still contains template guidance and should be updated with project-specific content.
 
 ## About This Repository
 
 This is a minimal, language-agnostic GitHub repository template. It includes formatting enforcement and a CI workflow as a baseline — there is no build system, test suite, or application code. Those are added by projects that use this template.
 
-## Formatting
+## Tooling
 
-Format all files with dprint:
+- **dprint** — Formatter for JSON, Markdown, and YAML files via `dprint.json`; derived templates may replace this with a language-native formatter (e.g. Prettier for Node.js).
+- **Lefthook** — Git hook manager via `lefthook.yaml`.
+- **Dependabot** — Keeps GitHub Actions dependencies up to date automatically via `.github/dependabot.yaml`.
+
+## Checking and Fixing
+
+Use Lefthook to run the same steps as the pre-commit hook:
 
 ```sh
-dprint fmt
+lefthook run pre-commit              # staged files only (default)
+lefthook run pre-commit --all-files  # all files — matches what CI runs
 ```
 
-Check formatting without modifying files:
+This runs `dprint fmt` to fix formatting. If any file changes during the run, it fails and shows a diff — re-stage the changed files and retry.
 
-```sh
-dprint check
-```
-
-dprint is configured in `dprint.jsonc` to handle JSON, Markdown, and YAML files.
-
-## Git Hooks
-
-Lefthook manages Git hooks (`lefthook.yaml`). The pre-commit hook runs `dprint fmt` automatically and fails the commit if formatting changes are required. Run `lefthook install` after cloning to activate the hooks.
+Individual command (manual fallback if needed): `dprint fmt`.
 
 ## CI
 
-The only CI job (`.github/workflows/ci.yaml`) validates the pre-commit hook with `lefthook run pre-commit --all-files` on PRs and pushes to `main`.
+CI (`.github/workflows/ci.yaml`) runs on PRs and pushes to `main`. It validates the pre-commit hook with `lefthook run pre-commit --all-files`.
