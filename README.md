@@ -2,29 +2,42 @@
 
 A minimal GitHub repository template with formatting enforcement and CI/CD ready to go, for any language or framework.
 
-## What's Included
-
-- **Formatting** with [dprint](https://dprint.dev/) — supports JSON, Markdown, and YAML out of the box
-- **Pre-commit hooks** with [Lefthook](https://lefthook.dev/) — auto-formats files before each commit
-- **Dependabot** — keeps GitHub Actions dependencies up to date automatically
-- **CI workflow** — validates the pre-commit hook on every pull request and push to `main`
-
 ## Getting Started
 
-1. [Create a new repository](https://github.com/new?template_name=project-starter&template_owner=threeal) from this template, or clone it directly.
-2. Install [Lefthook](https://lefthook.dev/install/) and run `lefthook install` to activate the pre-commit hook.
-3. Replace the [`LICENSE`](./LICENSE) file with your preferred license, or keep it to keep the project [unlicensed](https://unlicense.org/).
-4. Modify the template files to fit your project.
+Create a new repository from this template on GitHub using [this link](https://github.com/new?template_name=project-starter&template_owner=threeal), or clone it locally and point it at your own remote.
+
+## Setup
+
+Install [Lefthook](https://lefthook.dev/), then register the pre-commit hook:
+
+```sh
+lefthook install
+```
 
 ## Customizing
 
-Each config file is a starting point — modify it to fit your needs:
+Replace or extend the template files to fit your project:
 
-- `dprint.jsonc` — add or remove dprint plugins for your language
-- `lefthook.yaml` — add more pre-commit checks or other Git hooks
-- `.github/workflows/ci.yaml` — extend or replace the CI workflow
-- `.github/dependabot.yaml` — adjust update frequency or add more package ecosystems
-- `CLAUDE.md` — replace with guidance for your project's structure, tools, and development workflow (for Claude Code)
+- `dprint.json` — Add or remove dprint plugins for your language.
+- `lefthook.yaml` — Add more pre-commit checks or other Git hooks.
+- `.github/workflows/ci.yaml` — Extend or replace the CI workflow.
+- `.github/dependabot.yaml` — Adjust update frequency or add more package ecosystems.
+- `CLAUDE.md` — Replace with guidance specific to your project.
+- `LICENSE` — Replace with your preferred license, or keep the [Unlicense](https://unlicense.org/).
+
+## Development
+
+Before committing, run the pre-commit hook to fix formatting:
+
+```sh
+lefthook run pre-commit
+```
+
+If any files change during the run, re-stage them and retry. The hook also runs automatically on each `git commit` — if it fails, fix the reported issues, re-stage, and commit again.
+
+## CI
+
+`.github/workflows/ci.yaml` runs `lefthook run pre-commit --all-files` on every push and pull request.
 
 ## Language-Specific Templates
 
