@@ -18,12 +18,13 @@ lefthook install
 
 Replace or extend the template files to fit your project:
 
-- `dprint.json` — Add or remove dprint plugins for your language.
-- `lefthook.yaml` — Add more pre-commit checks or other Git hooks.
-- `.github/workflows/ci.yaml` — Extend or replace the CI workflow.
-- `.github/dependabot.yaml` — Adjust update frequency or add more package ecosystems.
-- `CLAUDE.md` — Replace with guidance specific to your project.
-- `LICENSE` — Replace with your preferred license, or keep the [Unlicense](https://unlicense.org/).
+- **`.github/workflows/ci.yaml`** — Extend or replace the CI workflow.
+- **`.github/dependabot.yaml`** — Adjust update frequency or add more package ecosystems.
+- **`CLAUDE.md`** — Replace with guidance specific to your project.
+- **`dprint.json`** — Add or remove dprint plugins for your language.
+- **`lefthook.yaml`** — Add more pre-commit checks or other Git hooks.
+- **`LICENSE`** — Replace with your preferred license, or keep the [Unlicense](https://unlicense.org/).
+- **`README.md`** — Replace with a description of your project.
 
 ## Development
 

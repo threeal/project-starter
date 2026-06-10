@@ -10,9 +10,9 @@ This is a minimal, language-agnostic GitHub repository template. It includes for
 
 ## Tooling
 
+- **Dependabot** — Keeps GitHub Actions dependencies up to date automatically via `.github/dependabot.yaml`.
 - **dprint** — Formatter for JSON, Markdown, and YAML files via `dprint.json`; derived templates may replace this with a language-native formatter (e.g. Prettier for Node.js).
 - **Lefthook** — Git hook manager via `lefthook.yaml`.
-- **Dependabot** — Keeps GitHub Actions dependencies up to date automatically via `.github/dependabot.yaml`.
 
 ## Checking and Fixing
 
