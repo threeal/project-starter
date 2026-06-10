@@ -6,27 +6,37 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## About This Repository
 
-This is a minimal, language-agnostic GitHub repository template. It includes formatting enforcement and a CI workflow as a baseline — there is no build system, test suite, or application code. Those are added by projects that use this template.
+This is a minimal, language-agnostic starter template with formatting enforcement and a CI workflow as a baseline. There is no build system, test suite, or application code — those are added by projects that use this template.
 
 ## Tooling
 
-- **Dependabot** — Keeps GitHub Actions dependencies up to date automatically via `.github/dependabot.yaml`.
-- **dprint** — Formatter for JSON, Markdown, and YAML files via `dprint.json`; derived templates may replace this with a language-native formatter (e.g. Prettier for Node.js).
-- **Lefthook** — Git hook manager via `lefthook.yaml`.
+### Dependabot
+
+Keeps GitHub Actions dependencies up to date automatically via `.github/dependabot.yaml`.
+
+### dprint
+
+Formatter for JSON, Markdown, and YAML files via `dprint.json`.
+
+### GitHub Actions
+
+Automates CI. Workflow files:
+
+- **`.github/workflows/ci.yaml`** — Triggers on push to `main`, pull requests, and manual dispatch. Runs `lefthook run pre-commit --all-files` to validate formatting.
+
+### Lefthook
+
+Git hook manager configured in `lefthook.yaml`. The pre-commit hook:
+
+- Fixes formatting with `dprint fmt`.
 
 ## Checking and Fixing
 
-Use Lefthook to run the same steps as the pre-commit hook:
+Run the pre-commit hook:
 
 ```sh
 lefthook run pre-commit              # staged files only (default)
 lefthook run pre-commit --all-files  # all files — matches what CI runs
 ```
 
-This runs `dprint fmt` to fix formatting. If any file changes during the run, it fails and shows a diff — re-stage the changed files and retry.
-
-Individual command (manual fallback if needed): `dprint fmt`.
-
-## CI
-
-CI (`.github/workflows/ci.yaml`) runs on PRs and pushes to `main`. It validates the pre-commit hook with `lefthook run pre-commit --all-files`.
+If any file changes during the run, re-stage the changed files and retry.
