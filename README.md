@@ -1,6 +1,6 @@
 # Project Starter
 
-A minimal GitHub repository template with formatting enforcement and CI/CD ready to go, for any language or framework.
+A minimal template for any language or framework. Ships pre-configured with formatting enforcement, pre-commit hooks, and CI.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ Create a new repository from this template on GitHub using [this link](https://g
 
 ## Setup
 
-Install [Lefthook](https://lefthook.dev/), then register the pre-commit hook:
+Install [Lefthook](https://lefthook.dev/) and [dprint](https://dprint.dev/), then register the pre-commit hook:
 
 ```sh
 lefthook install
@@ -34,20 +34,18 @@ Before committing, run the pre-commit hook to fix formatting:
 lefthook run pre-commit
 ```
 
-If any files change during the run, re-stage them and retry. The hook also runs automatically on each `git commit` — if it fails, fix the reported issues, re-stage, and commit again.
+If any file changes during the run, re-stage the changed files and retry. The hook also runs automatically on each `git commit` — if it fails, re-stage the changed files and commit again.
 
-## CI
-
-`.github/workflows/ci.yaml` runs `lefthook run pre-commit --all-files` on every push and pull request.
+After committing, push to `main` or open a pull request from another branch — CI will run the pre-commit hook across all files.
 
 ## Language-Specific Templates
 
 For a more opinionated starting point in a specific language or framework:
 
-- [Action Starter](https://github.com/threeal/action-starter)
-- [C++ Starter](https://github.com/threeal/cpp-starter)
-- [CMake Starter](https://github.com/threeal/cmake-starter)
-- [Composite Action Starter](https://github.com/threeal/composite-action-starter)
-- [Discord Bot Starter](https://github.com/threeal/discord-bot-starter)
-- [Node.js Starter](https://github.com/threeal/nodejs-starter)
-- [Python Starter](https://github.com/threeal/python-starter)
+- **[Action Starter](https://github.com/threeal/action-starter)** — JavaScript GitHub Action projects.
+- **[C++ Starter](https://github.com/threeal/cpp-starter)** — C++ projects.
+- **[CMake Starter](https://github.com/threeal/cmake-starter)** — CMake projects.
+- **[Composite Action Starter](https://github.com/threeal/composite-action-starter)** — Composite GitHub Action projects.
+- **[Discord Bot Starter](https://github.com/threeal/discord-bot-starter)** — Discord bot projects.
+- **[Node.js Starter](https://github.com/threeal/nodejs-starter)** — Node.js projects.
+- **[Python Starter](https://github.com/threeal/python-starter)** — Python projects.
