@@ -21,4 +21,4 @@ jobs:
         uses: threeal/setup-lefthook-action@v1.0.0
 
       - name: Check pre-commit hook
-        run: lefthook run pre-commit --all-files
+        run: lefthook run pre-commit

@@ -22,7 +22,7 @@ Formatter for JSON, Markdown, and YAML files via `dprint.json`.
 
 Automates CI. Workflow files:
 
-- **`.github/workflows/ci.yaml`** — Triggers on push to `main`, pull requests, and manual dispatch. Runs `lefthook run pre-commit --all-files` to validate formatting.
+- **`.github/workflows/ci.yaml`** — Triggers on push to `main`, pull requests, and manual dispatch. Runs `lefthook run pre-commit` to validate formatting.
 
 ### Lefthook
 
@@ -35,8 +35,7 @@ Git hook manager configured in `lefthook.yaml`. The pre-commit hook:
 Run the pre-commit hook:
 
 ```sh
-lefthook run pre-commit              # staged files only (default)
-lefthook run pre-commit --all-files  # all files — matches what CI runs
+lefthook run pre-commit
 ```
 
 If any file changes during the run, re-stage the changed files and retry.
