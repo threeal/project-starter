@@ -6,36 +6,22 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## About This Repository
 
-This is a minimal, language-agnostic starter template with formatting enforcement and a CI workflow as a baseline. There is no build system, test suite, or application code — those are added by projects that use this template.
+A minimal, language-agnostic starter template with formatting enforcement and a CI workflow baseline. No build system, test suite, or application code — those are added by projects that use this template.
 
-## Tooling
+## Non-Obvious Rules
 
-### Dependabot
+- `.gitignore` ignores all dotfiles/dotdirs by default (`.*`), except `.github/` — a new dotfile or dotdir needs an explicit `!` exception or it silently won't be tracked.
+- `lefthook run pre-commit` auto-fixes formatting; `fail_on_changes` fails the run if any file changed. Re-stage the changed files and rerun.
 
-Keeps GitHub Actions dependencies up to date automatically via `.github/dependabot.yaml`.
+## Config Map
 
-### dprint
-
-Formatter for JSON, Markdown, and YAML files via `dprint.json`.
-
-### GitHub Actions
-
-Automates CI. Workflow files:
-
-- **`.github/workflows/ci.yaml`** — Triggers on push to `main`, pull requests, and manual dispatch. Runs `lefthook run pre-commit` to validate formatting.
-
-### Lefthook
-
-Git hook manager configured in `lefthook.yaml`. The pre-commit hook:
-
-- Fixes formatting with `dprint fmt`.
+- Format — `dprint.json`
+- Git hooks — `lefthook.yaml`
+- CI — `.github/workflows/ci.yaml`
+- Dependency updates — `.github/dependabot.yaml`
 
 ## Checking and Fixing
-
-Run the pre-commit hook:
 
 ```sh
 lefthook run pre-commit
 ```
-
-If any file changes during the run, re-stage the changed files and retry.
