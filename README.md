@@ -49,3 +49,4 @@ For a more opinionated starting point in a specific language or framework:
 - **[Discord Bot Starter](https://github.com/threeal/discord-bot-starter)** — Discord bot projects.
 - **[Node.js Starter](https://github.com/threeal/nodejs-starter)** — Node.js projects.
 - **[Python Starter](https://github.com/threeal/python-starter)** — Python projects.
+- **[React Starter](https://github.com/threeal/react-starter)** — React app projects.
