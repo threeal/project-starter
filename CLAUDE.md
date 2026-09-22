@@ -11,7 +11,7 @@ A minimal, language-agnostic starter template with formatting enforcement and a 
 ## Non-Obvious Rules
 
 - `.gitignore` ignores all dotfiles/dotdirs by default (`.*`), except `.github/` — a new dotfile or dotdir needs an explicit `!` exception or it silently won't be tracked.
-- `lefthook run pre-commit` auto-fixes formatting, and `fail_on_changes` fails the run if anything changed. Report the failure and leave the fixes for the user to review and re-stage.
+- `lefthook run pre-commit --all-files` auto-fixes formatting, and `fail_on_changes` fails the run if anything changed. Without `--all-files` the job is skipped whenever nothing is staged. Report the failure and leave the fixes for the user to review and re-stage.
 
 ## Config Map
 
@@ -23,5 +23,5 @@ A minimal, language-agnostic starter template with formatting enforcement and a 
 ## Checking and Fixing
 
 ```sh
-lefthook run pre-commit
+lefthook run pre-commit --all-files
 ```
