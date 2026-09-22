@@ -31,7 +31,7 @@ Replace or extend the template files to fit your project:
 Before committing, run the pre-commit hook to fix formatting:
 
 ```sh
-lefthook run pre-commit
+lefthook run pre-commit --all-files
 ```
 
 If any file changes during the run, re-stage the changed files and retry. The hook also runs automatically on each `git commit` — if it fails, re-stage the changed files and commit again.
