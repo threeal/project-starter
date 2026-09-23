@@ -2,26 +2,18 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-> **Template notice:** This file describes the template repository itself. If working in a project derived from this template, inform the user that this CLAUDE.md still contains template guidance and should be updated with project-specific content.
+> **Template notice:** This file describes the template repository itself. In a project derived from this template, tell the user it should be replaced with project-specific guidance.
 
 ## About This Repository
 
-A minimal, language-agnostic starter template with formatting enforcement and a CI workflow baseline. No build system, test suite, or application code — those are added by projects that use this template.
+A minimal, language-agnostic starter template with formatting enforcement and a CI workflow baseline. No build system, test suite, or application code — those are added by projects derived from it.
 
-## Non-Obvious Rules
+## Gotchas
 
-- `.gitignore` ignores all dotfiles/dotdirs by default (`.*`), except `.github/` — a new dotfile or dotdir needs an explicit `!` exception or it silently won't be tracked.
-- `lefthook run pre-commit --all-files` auto-fixes formatting, and `fail_on_changes` fails the run if anything changed. Without `--all-files` the job is skipped whenever nothing is staged. Report the failure and leave the fixes for the user to review and re-stage.
+- `.gitignore` ignores every dotfile and dotdir (`.*`) — a new one needs an explicit `!` exception there or it silently won't be tracked.
+- `lefthook run pre-commit` skips every job when nothing is staged, even ones that ignore the staged file list — pass `--all-files` to run it outside an actual commit.
+- The pre-commit hook fixes files in place, and the run fails if any file changes. Report that failure and leave the fixes for the user to review and re-stage before committing again.
 
-## Config Map
+## Commands
 
-- Format — `dprint.json`
-- Git hooks — `lefthook.yaml`
-- CI — `.github/workflows/ci.yaml`
-- Dependency updates — `.github/dependabot.yaml`
-
-## Checking and Fixing
-
-```sh
-lefthook run pre-commit --all-files
-```
+- `lefthook run pre-commit --all-files` — run the pre-commit checks across the repo
