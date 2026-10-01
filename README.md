@@ -28,15 +28,9 @@ Replace or extend the template files to fit your project:
 
 ## Development
 
-Before committing, run the pre-commit hook to fix formatting:
+Each `git commit` runs the pre-commit hook registered during setup, which checks your changes and fixes what it can in place. If it fails, fix any reported issues, re-stage the changed files, and commit again.
 
-```sh
-lefthook run pre-commit --all-files
-```
-
-If any file changes during the run, re-stage the changed files and retry. The hook also runs automatically on each `git commit` — if it fails, re-stage the changed files and commit again.
-
-After committing, push to `main` or open a pull request from another branch — CI will run the pre-commit hook across all files.
+After committing, push to `main` or open a pull request from another branch — CI will run the same checks across all files.
 
 ## Language-Specific Templates
 
