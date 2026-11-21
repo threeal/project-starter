@@ -42,6 +42,7 @@ For a more opinionated starting point in a specific language or framework:
 - **[Composite Action Starter](https://github.com/threeal/composite-action-starter)** — Composite GitHub Action projects.
 - **[Discord Bot Starter](https://github.com/threeal/discord-bot-starter)** — Discord bot projects.
 - **[Go Starter](https://github.com/threeal/go-starter)** — Go projects.
+- **[Kotlin Starter](https://github.com/threeal/kotlin-starter)** — Kotlin projects.
 - **[Node.js Starter](https://github.com/threeal/nodejs-starter)** — Node.js projects.
 - **[Python Starter](https://github.com/threeal/python-starter)** — Python projects.
 - **[React Starter](https://github.com/threeal/react-starter)** — React app projects.
