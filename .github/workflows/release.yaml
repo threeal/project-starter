@@ -1,0 +1,16 @@
+name: Release
+on:
+  push:
+    tags: ["**"]
+jobs:
+  draft:
+    name: Draft
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - name: Create draft release
+        env:
+          GH_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" --draft --generate-notes
