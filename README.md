@@ -47,3 +47,4 @@ For a more opinionated starting point in a specific language or framework:
 - **[Python Starter](https://github.com/threeal/python-starter)** — Python projects.
 - **[React Starter](https://github.com/threeal/react-starter)** — React app projects.
 - **[Rust Starter](https://github.com/threeal/rust-starter)** — Rust projects.
+- **[Swift Starter](https://github.com/threeal/swift-starter)** — Swift projects.
