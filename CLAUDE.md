@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## About This Repository
 
-A minimal, language-agnostic starter template with formatting enforcement and a CI workflow baseline. No build system, test suite, or application code — those are added by projects derived from it.
+A minimal, language-agnostic starter template that provides a baseline for formatting, checks, and releases. No build system, test suite, or application code — those are added by projects derived from it.
 
 ## Gotchas
 

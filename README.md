@@ -1,6 +1,6 @@
 # Project Starter
 
-A minimal template for any language or framework. Ships pre-configured with formatting enforcement, pre-commit hooks, and CI.
+A minimal template for any language or framework, with formatting enforced on every commit, checks on every pull request, and a draft GitHub release for every tag you push.
 
 ## Getting Started
 
